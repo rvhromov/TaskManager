@@ -1,0 +1,308 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+input,
+select,
+textarea {
+    max-width: 100%;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 50px;
+}
+
+.icon-bar {
+    background-color: #0da5f3;
+}
+
+.navbar {
+    padding: 24px;
+    z-index: 9999; 
+    background-color: #ffffff;
+}
+
+.navbar-light {
+    font-size: large; 
+}
+
+.navbar-brand {
+    float: left;
+    font-size: 30px;
+    line-height: 20px;
+    color: #0da5f3;
+}
+
+.navbar-brand:hover {
+    color: #428bca;
+    transition: all .2s ease-out;
+}
+
+.navbar-collapse {
+    background-color: #ffffff;
+}
+
+.navbar-right {
+    float: left;
+}
+
+.navbar-right a {
+    color: #0da5f3;
+}
+
+.navbar-right a:hover {
+    color: #428bca;
+    background-color: transparent !important;
+    transition: all .2s ease-out;
+}
+
+.body-content {
+    padding-top: 60px;
+}
+
+.greetings {
+    padding: 70px;
+    color: #000000;
+}
+
+.greetings h1 {
+    font-size: 70px;
+}
+
+.greetings a {
+    background-color: #0da5f3; 
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.greetings a:hover {
+    background-color: #ffffff;
+    border-color: #0da5f3;
+    color: #0da5f3;
+    transition: all .2s ease-out;
+}
+
+.btn-lg {
+    min-width: 300px;
+}
+
+.ads h2 {
+    color: #000000;
+}
+
+.ads p {
+    color: #727272;
+    font-size: 20px;
+}
+
+.icon {
+    color: #0da5f3;
+    font-size: 30px;
+    line-height: 38px;
+    padding-left: 10px;
+}
+
+.icon:hover {
+    color: #428bca;
+    transition: all .2s ease-out;
+}
+
+footer {
+    color: #727272;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.newacc {
+    margin-bottom: 50px;
+}
+
+.inacc {
+    margin-bottom: 20px;
+}
+
+.subbtn {
+    margin-top: 20px;
+    background-color: #0da5f3;
+    border-color: #0da5f3;
+    font-size: 18px;
+    width: 100%;
+}
+
+.subbtn:hover {
+    background-color: #ffffff;
+    color: #0da5f3;
+    transition: all .2s ease-out;
+}
+
+.inlbl {
+    padding-left: 13px;
+}
+
+.customerr {
+    padding: 15px 0;
+    font-size: 18px;
+}
+
+.delbtn {
+    margin: 20px 0;
+    font-size: 18px;
+    width: 100%;
+}
+
+.delbtn:hover {
+    transition: all .2s ease-out;
+}
+
+.dropmenu {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 13px;
+}
+
+.dropmenu:hover {
+    text-decoration: none;
+}
+
+.dropdown-divider {
+    padding: 5px 0;
+}
+
+.dropdown-menu {
+    box-shadow: none;
+    text-align: right;
+    border: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .dropdown-menu {
+        box-shadow: none;
+        text-align: justify;
+        border: none;
+    }
+}
+
+#navbardrop, #navbarsignup, #navbarlogin {
+    background:none;
+}
+
+#taskarea {
+    resize: none;
+    min-height: 100px;
+    max-height: 200px;
+}
+
+div.newtask {
+    position: fixed;
+    bottom: 80px;
+    right: 60px;
+    padding: 20px;
+}
+
+.taskicon {
+    font-size: 40px;
+    color: #0aa51b;
+}
+
+.taskicon:hover {
+    color: #0a9419;
+    transition: all .2s ease-out;
+}
+
+.glyphicon-edit {
+    text-shadow: 0 0 5px #aaaaaa;
+}
+
+.task {
+    padding: 0 13px;
+}
+
+.task h2 {
+    color: #428bca;
+    padding-bottom: 13px;
+}
+
+.taskbody {
+    font-size: 16px;
+    padding-bottom: 13px;
+}
+
+.date {
+    color: #777777;
+    float: left;
+}
+
+.taskcontrol {
+    font-size: 16px;
+}
+
+.taskedit:hover {
+    text-decoration: none;
+    transition: all .2s ease-out;
+}
+
+.taskdel {
+    padding-left: 13px;
+}
+
+.taskdel:hover {
+    color: #b50000;
+    text-decoration: none;
+    transition: all .2s ease-out;
+}
+
+.glyphicon-calendar {
+    padding-right: 5px;
+}
+
+pre {
+    background: none;
+    border: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0;
+}
+
+.text {
+    font-size: 16px;
+    padding-top: 30px;
+}
+
+.loginLink {
+    color: #0da5f3; 
+}
+
+.loginLink:hover {
+    color: #428bca;
+    text-decoration: none;
+    transition: all .2s ease-out;
+}
+
+.forgot {
+    color: #0da5f3;
+}
+
+.forgot:hover {
+    color: #428bca;
+    text-decoration: none;
+    transition: all .2s ease-out;
+}

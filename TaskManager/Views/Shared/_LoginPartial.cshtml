@@ -1,0 +1,46 @@
+﻿@using Microsoft.AspNet.Identity
+@if (Request.IsAuthenticated)
+{
+    using (Html.BeginForm("Logout", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {
+        @Html.AntiForgeryToken()
+        <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-cog"></span>
+                    Settings
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item dropmenu" href="@Url.Action("EditName", "Account")">Edit name</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item dropmenu" href="@Url.Action("ChangePassword", "Account")">Change password</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item dropmenu" href="@Url.Action("Delete", "Account")">Delete account</a>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:document.getElementById('logoutForm').submit()">
+                    <span class="glyphicon glyphicon-log-out"></span>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    }
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a id="navbarsignup" href="@Url.Action("Register", "Account")">
+                <span class="glyphicon glyphicon-user"></span>
+                Sign Up
+            </a>
+        </li>
+        <li>
+            <a id="navbarlogin" href="@Url.Action("Login", "Account")">
+                <span class="glyphicon glyphicon-log-in"></span>
+                Login
+            </a>
+        </li>
+    </ul>
+}

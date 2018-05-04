@@ -1,0 +1,44 @@
+﻿@model IEnumerable<TaskManager.Models.TaskModel>
+
+@{
+    ViewBag.Title = "Tasks";
+    int i = 0;
+}
+
+<div class="col-md-10 col-md-offset-1">
+    <h2 class="newacc text-center">Your list of tasks</h2>
+
+    @foreach (var item in Model)
+    {
+        i++;
+        <div class="task">
+            <p>@Html.HiddenFor(modelItem => item.Id)</p>
+            <h2>@Html.DisplayFor(modelItem => item.Title)</h2>
+            <pre class="taskbody">@Html.DisplayFor(modelItem => item.Body)</pre>
+            <p class="date">
+                <span class="glyphicon glyphicon-calendar"></span>
+                @Html.DisplayFor(modelItem => item.Date)
+            </p>
+
+            <div class="text-right taskcontrol ">
+                <a href="@Url.Action("EditTask", "Home", new { id = item.Id })" class="text-primary taskedit">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                </a>
+
+                <a href="javascript:document.forms[@i].submit()" class="text-danger taskdel">
+                    <span class="glyphicon glyphicon-trash"></span>
+                </a>
+                @using (Html.BeginForm("DeleteTask", "Home", new { id = item.Id }))
+                {@Html.AntiForgeryToken()}
+
+            </div>
+        </div>
+        <hr />
+    }
+</div>
+
+<div class="newtask">
+    <a href="@Url.Action("Create", "Home")">
+        <span class="glyphicon glyphicon-edit taskicon"></span>
+    </a>
+</div>

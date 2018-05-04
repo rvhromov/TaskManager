@@ -1,0 +1,41 @@
+﻿@{
+    Layout = null;
+    ViewBag.Title = "Error 404";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .section-content {
+            padding-top: 17%;
+        }
+
+        .code {
+            font-size: 150px;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="section-content text-center pagination-centered">
+                <img src="~/Content/Images/404.png" />
+                <h1 class="code">404</h1>
+                <h1>Oops, page not found!</h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="/scripts/snippet-javascript-console.min.js?v=1"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+﻿@model TaskManager.Models.TaskModel
+
+@{
+    ViewBag.Title = "Edit Task";
+}
+
+<div class="col-md-4 col-md-offset-4">
+    <h2 class="newacc text-center">Edit task</h2>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(model => model.ApplicationUserId)
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Title, new { @class = "control-label inlbl" })
+            @Html.TextBoxFor(m => m.Title, new { @class = "form-control", placeholder = "Enter title" })
+            @Html.ValidationMessageFor(m => m.Title, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Date, new { @class = "control-label inlbl" })
+            @Html.TextBoxFor(m => m.Date, "{0:dd-MM-yyyy}", new { @class = "form-control", placeholder = "dd-MM-yyyy" })
+            @Html.ValidationMessageFor(m => m.Date, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Body, new { @class = "control-label inlbl" })
+            <pre>
+                @Html.TextAreaFor(m => m.Body, new { @class = "form-control", id = "taskarea", placeholder = "Enter task" })
+            </pre>
+            @Html.ValidationMessageFor(m => m.Body, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="subbtn btn btn-primary">Save</button>
+        </div>
+    }
+</div>
+

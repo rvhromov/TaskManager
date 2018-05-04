@@ -1,0 +1,15 @@
+﻿@using Microsoft.AspNet.Identity
+@if (Request.IsAuthenticated)
+{
+    @Html.ActionLink("Task Manager", "Tasks", "Home", new { area = "" }, new { @class = "navbar-brand" })
+    <a href="@Url.Action("Tasks", "Home")">
+        <span class="glyphicon glyphicon-check icon"></span>
+    </a>
+}
+else
+{
+    @Html.ActionLink("Task Manager", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+    <a href="@Url.Action("Index", "Home")">
+        <span class="glyphicon glyphicon-check icon"></span>
+    </a>
+}
