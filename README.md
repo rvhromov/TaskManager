@@ -13,5 +13,5 @@ This app allows you to track your tasks and manage them.
 3. Download all nuget dependencies
 4. Build and run the project
 
-Also MS SQL Server must be installed.
-[Click here](http://task-manager.somee.com) for working example
+Also MS SQL Server must be installed.<br />
+[Click here](http://task-manager.somee.com) for working example.
